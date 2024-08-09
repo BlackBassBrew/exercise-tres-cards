@@ -7,9 +7,11 @@ body {
   display: flex;
   gap: 15px;
   align-items: center;
-  border: 2px solid red;
-  padding: 10px;
-  height: 250px;
+  /* border: 2px solid red; */
+  /* padding: 10px; */
+  height: 230px;
+  width: 70vw;
+  margin-top: 200px;
 }
 .card {
   display: grid;
@@ -19,11 +21,13 @@ body {
   grid-template-areas:
     "img img img h3 h3 h3"
     "img img img p p p"
-    "a a a a a a";
+    "a a a a a i";
 
-  border: 2px solid black;
+  /* border: 2px solid black; */
   flex: 1 1 50%;
+  border: 2px solid white;
   border-radius: 5px;
+  box-shadow: 0px 0px 4px 2px #dedae6;
   padding: 10px;
   height: 100%;
   width: 100%;
@@ -34,10 +38,10 @@ body {
   grid-area: img;
   max-width: 100%;
   max-height: 100%;
-  object-fit: fill; /* Ensures the image covers the grid area */
+  object-fit: fill;
   align-self: center;
   justify-self: center;
-  border: 2px solid blue;
+  border-radius: 50%;
 }
 .card h3 {
   grid-area: h3;
@@ -50,5 +54,16 @@ body {
   grid-area: a;
   text-decoration: none;
   padding: 10px;
-  align-self: center;
+  font-size: 1.5em;
+  color:rgba(128, 128, 128, 60%);
+}
+.card i {
+  grid-area: i;
+  font-size: 2.5em;
+  color:rgba(128, 128, 128, 60%);
+}
+.card:hover {
+  background: #f2f2f2;
+  box-shadow: 0px 0px 12px 4px #dedae6;
+  border: 2px solid #f2f2f2;
 }
