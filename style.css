@@ -21,7 +21,7 @@ body {
   grid-template-areas:
     "img img img h3 h3 h3"
     "img img img p p p"
-    "a a a a a i";
+    "a a a a a a";
 
   /* border: 2px solid black; */
   flex: 1 1 50%;
@@ -46,21 +46,24 @@ body {
 .card h3 {
   grid-area: h3;
 }
-.card p {
+.card > p {
   grid-area: p;
   font-size: 1.25em;
 }
-.card a {
+.card > a {
   grid-area: a;
   text-decoration: none;
-  padding: 10px;
+  align-self: center;
+  padding: 0px 10px;
   font-size: 1.5em;
-  color:rgba(128, 128, 128, 60%);
+  color:rgba(128, 128, 128, 75%);
+
+  display: flex;
+  justify-content: space-between;
 }
-.card i {
-  grid-area: i;
-  font-size: 2.5em;
-  color:rgba(128, 128, 128, 60%);
+
+.card a > p {
+  margin: 0px;
 }
 .card:hover {
   background: #f2f2f2;
