@@ -9,12 +9,12 @@ body {
   align-items: center;
   height: 230px;
   width: 70vw;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .card {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 33%);
   gap: 10px;
   grid-template-areas:
     "img img img h3 h3 h3"
@@ -63,4 +63,20 @@ body {
   background: #f2f2f2;
   box-shadow: 0px 0px 12px 4px #dedae6;
   border: 2px solid #f2f2f2;
+}
+@media (max-width: 375px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 100vw;
+  }
+  .card{
+    max-height: 33%;
+    font-size: 0.7em;
+    gap: 8px;
+  }
+  .card > h3, .card > p {
+    align-self: center;
+  }
 }
