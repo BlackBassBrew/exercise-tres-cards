@@ -7,8 +7,6 @@ body {
   display: flex;
   gap: 15px;
   align-items: center;
-  /* border: 2px solid red; */
-  /* padding: 10px; */
   height: 230px;
   width: 70vw;
   margin-top: 200px;
@@ -22,8 +20,6 @@ body {
     "img img img h3 h3 h3"
     "img img img p p p"
     "a a a a a a";
-
-  /* border: 2px solid black; */
   flex: 1 1 50%;
   border: 2px solid white;
   border-radius: 5px;
@@ -57,11 +53,9 @@ body {
   padding: 0px 10px;
   font-size: 1.5em;
   color:rgba(128, 128, 128, 75%);
-
   display: flex;
   justify-content: space-between;
 }
-
 .card a > p {
   margin: 0px;
 }
